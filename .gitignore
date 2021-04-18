@@ -1,0 +1,10 @@
+
+*.class
+
+*.html
+
+*.gif
+
+.idea/
+
+target/classes/
