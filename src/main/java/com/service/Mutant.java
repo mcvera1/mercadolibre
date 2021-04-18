@@ -123,23 +123,4 @@ public class Mutant implements MutantService{
         return times;
     }
 
-    private void otraDiagoal(String[][] array, String secuenciaAdn) {
-
-        int a, horizontal = array.length;
-        for (int i = 1 - array.length; i < array.length - 1; i++) {
-            StringBuilder cadenaAdnDiagonal = new StringBuilder();
-            if(horizontal == 0) {
-
-            } else {
-                for (a = Math.max(array.length - 1, i), horizontal = -Math.min(0, i); a >= 0 && horizontal < array[0].length; a--, horizontal++) {
-                    cadenaAdnDiagonal.append(array[a][horizontal]);
-                }
-            }
-            if (cadenaAdnDiagonal.indexOf(secuenciaAdn) > -1) {
-                System.err.println(cadenaAdnDiagonal);
-            }
-
-        }
-    }
-
 }
